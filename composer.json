@@ -23,8 +23,8 @@
         "php": "^8.0",
         "laravel/framework": "8.*",
         "laravelcollective/html": ">=6.0.0",
-        "skillpedialms/h5p-core": "dev-master",
-        "skillpedialms/h5p-editor": "dev-master",
+        "skillpedialms/h5p-core": "main",
+        "skillpedialms/h5p-editor": "main",
         "guzzlehttp/guzzle": ">=6"
     },
     "require-dev": {
