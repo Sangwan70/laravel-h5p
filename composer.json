@@ -1,16 +1,12 @@
 {
     "name": "skillpedialms/laravel-h5p",
-    "description": "H5P Plugin for laravel platform",
+    "description": "H5P Plugin for laravel TheSkillPedia",
     "type": "library",
     "authors": [{
             "name": "Ram N Sangwan",
             "email": "contact@rnsangwan.com"
-        },
-        {
-            "name": "Sandeep Rodridge",
-            "email": "sandeep@theskillpedia.com"
         }
-    ],
+      ],
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -20,26 +16,26 @@
         }
     },
     "require": {
-        "php": "^8.0",
-        "laravel/framework": "8.*",
+        "php": ">=7.4",
+        "laravel/framework": "^8|^9",
         "laravelcollective/html": ">=6.0.0",
-        "skillpedialms/h5p-core": "main",
-        "skillpedialms/h5p-editor": "main",
+        "skillpedialms/h5p-core": "v1.0.0",
+        "skillpedialms/h5p-editor": "v1.0.0",
         "guzzlehttp/guzzle": ">=6"
     },
     "require-dev": {
-        "fzaninotto/faker": "^1.8",
-        "mockery/mockery": "1.2.*",
-        "phpunit/phpunit": "~7.0",
-        "kitloong/laravel-migrations-generator": "^4.0"
-    },
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^6.0",
+        "laravel/legacy-factories": "^1.0.4",
+        "guzzlehttp/guzzle": "^7"
+     },
     "extra": {
         "laravel": {
             "providers": [
                 "SkillPedia\\LaravelH5p\\LaravelH5pServiceProvider"
             ],
             "aliases": {
-                "LaravelH5p": "SkillPedia\\LaravelH5p\\Facades"
+                "SkillPedia": "SkillPedia\\LaravelH5p\\Facades"
             }
         }
     }
