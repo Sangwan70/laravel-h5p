@@ -1,0 +1,46 @@
+{
+    "name": "skillpedialms/laravel-h5p",
+    "description": "H5P Plugin for laravel platform",
+    "type": "library",
+    "authors": [{
+            "name": "Ram N Sangwan",
+            "email": "contact@rnsangwan.com"
+        },
+        {
+            "name": "Sandeep Rodridge",
+            "email": "sandeep@theskillpedia.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "SkillPedia\\LaravelH5p\\": "src/LaravelH5p"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "8.*",
+        "laravelcollective/html": ">=6.0.0",
+        "skillpedialms/h5p-core": "dev-master",
+        "skillpedialms/h5p-editor": "dev-master",
+        "guzzlehttp/guzzle": ">=6"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.8",
+        "mockery/mockery": "1.2.*",
+        "phpunit/phpunit": "~7.0",
+        "kitloong/laravel-migrations-generator": "^4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SkillPedia\\LaravelH5p\\LaravelH5pServiceProvider"
+            ],
+            "aliases": {
+                "LaravelH5p": "SkillPedia\\LaravelH5p\\Facades"
+            }
+        }
+    }
+}
